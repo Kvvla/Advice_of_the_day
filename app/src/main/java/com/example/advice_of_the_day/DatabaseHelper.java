@@ -31,7 +31,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // Создание таблиц
+
         String createDateTable = "CREATE TABLE " + TABLE_DATE_IN_HISTORY + " (" +
                 COLUMN_DATE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_DATE + " TEXT NOT NULL, " +

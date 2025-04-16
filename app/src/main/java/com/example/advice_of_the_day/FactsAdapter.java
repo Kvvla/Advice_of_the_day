@@ -32,7 +32,7 @@ public class FactsAdapter extends RecyclerView.Adapter<FactsAdapter.FactViewHold
         FactItem fact = facts.get(position);
         holder.factText.setText(fact.getFactText());
 
-        // Можно настроить разное отображение для исторического факта
+
         if (fact.isHistoryFact()) {
             holder.factText.setTextSize(18);
             holder.factText.setBackgroundResource(R.color.history_fact_bg);
